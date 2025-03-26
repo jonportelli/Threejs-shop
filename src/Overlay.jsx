@@ -22,7 +22,7 @@ const Header = styled(motion.header)`
   padding: 1.5rem 2rem;
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: left;
   pointer-events: auto;
 `;
 
@@ -40,7 +40,6 @@ const Section = styled(motion.section)`
   left: 0%;
   transform: translate(-50%, -50%);
   width: 100%;
-  max-width: 800px;
   padding: 2rem;
   pointer-events: auto;
 `;
@@ -63,11 +62,12 @@ const Content = styled(motion.div)`
     line-height: 1.6;
     margin-bottom: 2rem;
     color: #333;
+    justify: left;
   }
 `;
 
 const Button = styled(motion.button)`
-  padding: 0rem 2rem;
+  padding: 2rem 2rem;
   font-size: 1.1rem;
   font-weight: 500;
   background: #000;
