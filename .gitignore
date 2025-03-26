@@ -1,1 +1,11 @@
 node_modules
+build/asset-manifest.json
+build/index.html
+build/Inter-Regular.woff
+build/kitchen-transformed.glb
+build/static/css/main.208143d7.css
+build/static/css/main.208143d7.css.map
+build/static/js/main.a9ee1e5e.js
+build/static/js/main.a9ee1e5e.js.LICENSE.txt
+build/static/js/main.a9ee1e5e.js.map
+package-lock.json

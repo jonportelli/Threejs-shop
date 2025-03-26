@@ -4,9 +4,11 @@ import { Canvas, useFrame, useThree } from "@react-three/fiber"
 import { Sky, Bvh } from "@react-three/drei"
 import { EffectComposer, Selection, Outline, N8AO, TiltShift2, ToneMapping } from "@react-three/postprocessing"
 import { Scene } from "./Scene"
+import { Overlay } from "./Overlay" 
 
 export const App = () => (
-  <Canvas flat dpr={[1, 1.5]} gl={{ antialias: false }} camera={{ position: [0, 1, 6], fov: 25, near: 1, far: 20 }}>
+ <>
+ <Canvas flat dpr={[1, 1.5]} gl={{ antialias: false }} camera={{ position: [0, 1, 6], fov: 25, near: 1, far: 20 }}>
     <ambientLight intensity={1.5 * Math.PI} />
     <Sky />
     <Bvh firstHitOnly>
@@ -16,6 +18,9 @@ export const App = () => (
       </Selection>
     </Bvh>
   </Canvas>
+    {/* Add the Overlay component */}
+    <Overlay />
+    </>
 )
 
 function Effects() {
