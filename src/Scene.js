@@ -53,6 +53,7 @@ export function Scene(props) {
         <mesh geometry={nodes.kitchen.geometry} material={materials.walls} />
         <mesh geometry={nodes.sink.geometry} material={materials.chrome} material-envMap={env} />
       </group>
+      
       <Text position={[1, 1.25, 0]} color="black" fontSize={0.15} font="Inter-Regular.woff" letterSpacing={-0.05}>
         {hovered ? hovered : "KNOXHULT"}
       </Text>
